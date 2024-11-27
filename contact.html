@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>Web Form</h1>
+    </header>
+    
+    <nav class = "structural">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+    
+    <main class="contact">
+       <form>
+        <h2>Contact</h2>
+            <div>
+                <label for = "name">Name</label>
+                <input type = "text" id="name" name ="name" required autofocus>
+            </div>
+            <div id="information">
+                <label for ="email" >Email</label>
+                <input type = "email" id = "email" name="email" required>
+
+            </div>
+            <div id="information">
+                <label for ="phone number" >Mobile number</label>
+                <input type = "Mobile number" id = "number" name="number" required>
+
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <fieldset>
+                <legend>Which car you would like to order?</legend>
+                <div>
+                    <input type="radio" id="4" name="sec" value="4" required>
+                    <label for="4">Ford Mustang Gt</label><br>
+                    <input type="radio" id="5" name="sec" value="5">
+                    <label for="5">Ford Escape</label><br>
+                    <input type="radio" id="8" name="sec" value="8">
+                    <label for="8">Ford Bronco</label><br>
+                </div>
+            </fieldset>
+            <div>
+                <label for="help">What do you need help with?</label>
+
+                <select id="help" name="help" required>
+                    <option value="" disabled selected>Select option</option>
+                    <option value="Insurance policy">Insurance policy</option>
+                    <option value="Car booking">Car Features</option>
+                    <option value="car features"></option>
+                </select>
+    
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                <input type="checkbox" id="human" name="human" value="true" required>
+                <label for="human">I am a human</label>
+                <input type="submit" id="submit" value="Submit" required>
+            </div>
+          
+       </form>
+    </main>
+
+   <footer class = "structural">
+         <p>&copy; Shivank Tyagi 2024</p>
+   </footer>
+    
+</body>
+</html>
